@@ -22,7 +22,7 @@ const Header = () => {
           style={{ animationDelay: '200ms' }}
         >
           Hidden Gems
-          <span className="block text-copper mt-2">Readathon</span>
+          <span className="block text-copper mt-2">Year-Long Event</span>
         </h1>
 
         {/* Decorative line */}
