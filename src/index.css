@@ -1,12 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @import '@fontsource/crimson-text/400.css';
 @import '@fontsource/crimson-text/600.css';
 @import '@fontsource/crimson-text/700.css';
 @import '@fontsource/cinzel/400.css';
 @import '@fontsource/cinzel/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 @layer base {
   :root {
