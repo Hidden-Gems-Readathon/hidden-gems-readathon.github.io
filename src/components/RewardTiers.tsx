@@ -5,7 +5,8 @@ const tier1Urls = [
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_1.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_2.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_3.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_4.png"
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_4.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_5.png"
 ];
 
 const tier2Urls = [
@@ -13,6 +14,7 @@ const tier2Urls = [
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Aquamarine_Geode.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Garnet_Geode.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Jasper_Geode.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Zircon_Geode.png"
 ];
 
 const tier3Urls = [
@@ -20,6 +22,7 @@ const tier3Urls = [
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Aquamarine.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Garnet.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Jasper.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Zircon.png"
 ];
 
 const RewardTiers = () => {
