@@ -9,9 +9,12 @@ const rules = [
     icon: <Layers className="w-5 h-5 md:w-6 md:h-6" />,
     title: "Rating Tiers",
     tiers: [
-      { label: "Tier 1: Field Find", range: "3,000 – 5,000 ratings" },
-      { label: "Tier 2: Rare Relic", range: "1,000 – 3,000 ratings" },
-      { label: "Tier 3: Legendary Artifact", range: "Under 1,000 ratings" },
+      { label: "Tier 1: Field Find", range: "GR: 3,000 - 5,000 ratings\n" +
+            "SG: 1,000 - 2,000 ratings" },
+      { label: "Tier 2: Rare Relic", range: "GR: 1,000 - 3,000 ratings\n" +
+            "SG: 300 - 1,000 ratings" },
+      { label: "Tier 3: Legendary Artifact", range: "GR: Under 1,000 ratings\n" +
+            "SG: Under 300 ratings" },
     ],
   },
   {
