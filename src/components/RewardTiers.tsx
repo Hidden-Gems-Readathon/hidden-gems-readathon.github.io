@@ -1,7 +1,7 @@
 import TierButton from './TierButton';
 import { Pickaxe } from 'lucide-react';
 
-const tier1Urls = [
+const tier1UrlsQ1 = [
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_1.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_2.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_3.png",
@@ -9,7 +9,7 @@ const tier1Urls = [
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_5.png"
 ];
 
-const tier2Urls = [
+const tier2UrlsQ1 = [
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Amethyst_Geode.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Aquamarine_Geode.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Garnet_Geode.png",
@@ -17,12 +17,37 @@ const tier2Urls = [
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Zircon_Geode.png"
 ];
 
-const tier3Urls = [
+const tier3UrlsQ1 = [
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Amethyst.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Aquamarine.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Garnet.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Jasper.png",
   "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Zircon.png"
+];
+
+
+const tier1UrlsQ2 = [
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Plant_1.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Plant_2.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Plant_3.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Plant_4.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Plant_5.png",
+];
+
+const tier2UrlsQ2 = [
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Alexandrite_Geode.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Diamond_Geode.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Emerald_Geode.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Pearl_Shell.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Quartz_Geode.png",
+];
+
+const tier3UrlsQ2 = [
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Alexandrite.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Diamond.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Emerald.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Pearl.png",
+  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Quartz.png",
 ];
 
 const RewardTiers = () => {
@@ -44,13 +69,21 @@ const RewardTiers = () => {
       </div>
 
       {/* Tier buttons grid */}
+      {/* Tier buttons Q1 */}
+      <div className="text-center">
+        <div className="inline-flex items-center gap-3 mb-4">
+          <h3 className="font-display text-2xl md:text-4xl text-foreground tracking-wide">
+            January - March
+          </h3>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
         <div className="animate-fade-in" style={{ animationDelay: '100ms' }}>
           <TierButton
             tier={1}
             title="Field Find"
-            subtitle="3,000 – 5,000 ratings"
-            urls={tier1Urls}
+            urls={tier1UrlsQ1}
             icon="🪨"
           />
         </div>
@@ -58,9 +91,8 @@ const RewardTiers = () => {
         <div className="animate-fade-in" style={{ animationDelay: '250ms' }}>
           <TierButton
             tier={2}
-            title="Rare Relic"
-            subtitle="1,000 – 3,000 ratings"
-            urls={tier2Urls}
+            title='Rare Relic'
+            urls={tier2UrlsQ1}
             icon="💎"
           />
         </div>
@@ -69,8 +101,45 @@ const RewardTiers = () => {
           <TierButton
             tier={3}
             title="Legendary Artifact"
-            subtitle="Under 1,000 ratings"
-            urls={tier3Urls}
+            urls={tier3UrlsQ1}
+            icon="👑"
+          />
+        </div>
+      </div>
+
+      {/* Tier buttons Q2 */}
+
+      <div className="text-center">
+        <div className="inline-flex items-center gap-3 mb-4">
+          <h3 className="font-display text-2xl md:text-4xl text-foreground tracking-wide">
+            April - June
+          </h3>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+        <div className="animate-fade-in" style={{ animationDelay: '100ms' }}>
+          <TierButton
+            tier={1}
+            title="Field Find"
+            urls={tier1UrlsQ2}
+            icon="🪨"
+          />
+        </div>
+
+        <div className="animate-fade-in" style={{ animationDelay: '250ms' }}>
+          <TierButton
+            tier={2}
+            title='Rare Relic'
+            urls={tier2UrlsQ2}
+            icon="💎"
+          />
+        </div>
+
+        <div className="animate-fade-in" style={{ animationDelay: '400ms' }}>
+          <TierButton
+            tier={3}
+            title="Legendary Artifact"
+            urls={tier3UrlsQ2}
             icon="👑"
           />
         </div>

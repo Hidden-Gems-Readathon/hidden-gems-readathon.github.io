@@ -3,12 +3,11 @@ import { useState } from 'react';
 interface TierButtonProps {
   tier: number;
   title: string;
-  subtitle: string;
   urls: string[];
   icon: React.ReactNode;
 }
 
-const TierButton = ({ tier, title, subtitle, urls, icon }: TierButtonProps) => {
+const TierButton = ({ tier, title, urls, icon }: TierButtonProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isPressed, setIsPressed] = useState(false);
 
@@ -32,6 +31,18 @@ const TierButton = ({ tier, title, subtitle, urls, icon }: TierButtonProps) => {
     2: 'shadow-[0_0_40px_rgba(184,115,51,0.5)]',
     3: 'shadow-[0_0_50px_rgba(212,175,55,0.6)]',
   };
+
+  const tierGR = {
+    1: '3,000 - 5,000',
+    2: '1,000 - 3,000',
+    3: 'Under 1,000',
+  }
+
+  const tierSG = {
+    1: '1,000 - 2,000',
+    2: '300 - 1,000',
+    3: 'Under 300',
+  }
 
   return (
     <button
@@ -62,7 +73,7 @@ const TierButton = ({ tier, title, subtitle, urls, icon }: TierButtonProps) => {
         <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/20 pointer-events-none" />
 
         {/* Content */}
-        <div className="relative z-10 text-center space-y-3">
+        <div className="relative z-10 text-center flex flex-col items-center gap-3 h-full">
           {/* Icon */}
           <div className={`
             inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20
@@ -79,13 +90,18 @@ const TierButton = ({ tier, title, subtitle, urls, icon }: TierButtonProps) => {
           </div>
 
           {/* Title */}
-          <h3 className="font-display text-xl md:text-2xl text-parchment font-bold tracking-wide">
+          <h3 className="font-display text-xl md:text-2xl text-parchment font-bold tracking-wide min-h-[3.5rem] flex items-center justify-center">
             {title}
           </h3>
 
-          {/* Subtitle */}
+          {/* Subtitle GR */}
           <p className="text-parchment/80 text-sm md:text-base font-body">
-            {subtitle}
+            Goodreads: {tierGR[tier as keyof typeof tierGR]} ratings
+          </p>
+
+          {/* Subtitle SG */}
+          <p className="text-parchment/80 text-sm md:text-base font-body">
+            Storygraph: {tierSG[tier as keyof typeof tierSG]} ratings
           </p>
 
           {/* Click prompt */}
