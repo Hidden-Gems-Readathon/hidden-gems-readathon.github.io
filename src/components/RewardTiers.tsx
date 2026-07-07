@@ -1,54 +1,16 @@
 import TierButton from './TierButton';
 import { Pickaxe } from 'lucide-react';
-
-const tier1UrlsQ1 = [
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_1.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_2.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_3.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_4.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Footprint_5.png"
-];
-
-const tier2UrlsQ1 = [
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Amethyst_Geode.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Aquamarine_Geode.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Garnet_Geode.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Jasper_Geode.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Zircon_Geode.png"
-];
-
-const tier3UrlsQ1 = [
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Amethyst.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Aquamarine.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Garnet.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Jasper.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/First%20Quarter/Zircon.png"
-];
-
-
-const tier1UrlsQ2 = [
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Plant_1.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Plant_2.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Plant_3.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Plant_4.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Plant_5.png",
-];
-
-const tier2UrlsQ2 = [
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Alexandrite_Geode.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Diamond_Geode.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Emerald_Geode.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Pearl_Shell.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Quartz_Geode.png",
-];
-
-const tier3UrlsQ2 = [
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Alexandrite.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Diamond.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Emerald.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Pearl.png",
-  "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Second%20Quarter/Quartz.png",
-];
+import {
+  tier1UrlsQ1,
+  tier1UrlsQ2,
+  tier1UrlsQ3,
+  tier2UrlsQ1,
+  tier2UrlsQ2,
+  tier2UrlsQ3,
+  tier3UrlsQ1,
+  tier3UrlsQ2,
+  tier3UrlsQ3
+} from '@/lib/images';
 
 const RewardTiers = () => {
   return (
@@ -141,6 +103,44 @@ const RewardTiers = () => {
             title="Legendary Artifact"
             urls={tier3UrlsQ2}
             icon="👑"
+          />
+        </div>
+      </div>
+
+      {/* Tier buttons Q3 */}
+
+      <div className="text-center">
+        <div className="inline-flex items-center gap-3 mb-4">
+          <h3 className="font-display text-2xl md:text-4xl text-foreground tracking-wide">
+            July - September
+          </h3>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+        <div className="animate-fade-in" style={{ animationDelay: '100ms' }}>
+          <TierButton
+              tier={1}
+              title="Field Find"
+              urls={tier1UrlsQ3}
+              icon="🪨"
+          />
+        </div>
+
+        <div className="animate-fade-in" style={{ animationDelay: '250ms' }}>
+          <TierButton
+              tier={2}
+              title='Rare Relic'
+              urls={tier2UrlsQ3}
+              icon="💎"
+          />
+        </div>
+
+        <div className="animate-fade-in" style={{ animationDelay: '400ms' }}>
+          <TierButton
+              tier={3}
+              title="Legendary Artifact"
+              urls={tier3UrlsQ3}
+              icon="👑"
           />
         </div>
       </div>
