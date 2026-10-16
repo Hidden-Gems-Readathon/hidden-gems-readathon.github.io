@@ -9,7 +9,10 @@ import {
   tier2UrlsQ3,
   tier3UrlsQ1,
   tier3UrlsQ2,
-  tier3UrlsQ3
+  tier3UrlsQ3,
+  tier1UrlsQ4,
+  tier2UrlsQ4,
+  tier3UrlsQ4
 } from '@/lib/images';
 
 const RewardTiers = () => {
@@ -33,7 +36,7 @@ const RewardTiers = () => {
       {/* Tier buttons grid */}
       {/* Tier buttons Q1 */}
       <div className="text-center">
-        <div className="inline-flex items-center gap-3 mb-4">
+        <div className="inline-flex items-center gap-3 my-4">
           <h3 className="font-display text-2xl md:text-4xl text-foreground tracking-wide">
             January - March
           </h3>
@@ -72,7 +75,7 @@ const RewardTiers = () => {
       {/* Tier buttons Q2 */}
 
       <div className="text-center">
-        <div className="inline-flex items-center gap-3 mb-4">
+        <div className="inline-flex items-center gap-3 my-4">
           <h3 className="font-display text-2xl md:text-4xl text-foreground tracking-wide">
             April - June
           </h3>
@@ -110,7 +113,7 @@ const RewardTiers = () => {
       {/* Tier buttons Q3 */}
 
       <div className="text-center">
-        <div className="inline-flex items-center gap-3 mb-4">
+        <div className="inline-flex items-center gap-3 my-4 sm:my-8">
           <h3 className="font-display text-2xl md:text-4xl text-foreground tracking-wide">
             July - September
           </h3>
@@ -140,6 +143,45 @@ const RewardTiers = () => {
               tier={3}
               title="Legendary Artifact"
               urls={tier3UrlsQ3}
+              icon="👑"
+          />
+        </div>
+      </div>
+
+
+      {/* Tier buttons Q4 */}
+
+      <div className="text-center">
+        <div className="inline-flex items-center gap-3 mb-4">
+          <h3 className="font-display text-2xl md:text-4xl text-foreground tracking-wide">
+            October - December
+          </h3>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+        <div className="animate-fade-in" style={{ animationDelay: '100ms' }}>
+          <TierButton
+              tier={1}
+              title="Field Find"
+              urls={tier1UrlsQ4}
+              icon="🪨"
+          />
+        </div>
+
+        <div className="animate-fade-in" style={{ animationDelay: '250ms' }}>
+          <TierButton
+              tier={2}
+              title='Rare Relic'
+              urls={tier2UrlsQ4}
+              icon="💎"
+          />
+        </div>
+
+        <div className="animate-fade-in" style={{ animationDelay: '400ms' }}>
+          <TierButton
+              tier={3}
+              title="Legendary Artifact"
+              urls={tier3UrlsQ4}
               icon="👑"
           />
         </div>

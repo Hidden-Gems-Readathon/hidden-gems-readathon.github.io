@@ -77,3 +77,30 @@ export const tier3UrlsQ3 = [
     "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Third%20Quarter/Ruby.png",
 ];
 
+
+/* Quarter 4 */
+
+export const tier1UrlsQ4 = [
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Skull-1.png",
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Skull-2.png",
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Skull-3.png",
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Skull-4.png",
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Skull-5.png",
+];
+
+export const tier2UrlsQ4 = [
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Lapis_Lazuli_Geode.png",
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Opal_Geode.png",
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Tanzanite_Geode.png",
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Topaz_Geode.png",
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Tourmaline_Geode.png",
+];
+
+export const tier3UrlsQ4 = [
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Lapis_Lazuli.png",
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Opal.png",
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Tanzanite.png",
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Topaz.png",
+    "https://xunqxuqeklnpgxisxffo.supabase.co/storage/v1/object/public/Hidden%20Gems/Last%20Quarter/Tourmaline.png",
+];
+
